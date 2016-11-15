@@ -44,14 +44,14 @@
   <h2>Дата отдыха</h2>
   <div class="booking-steps__data-inner">
     <div class="booking-steps__data-check-in">
-      <h3 class="booking-steps__data-check-in-title">Дата въезда</h3>
-      <input type="number" min="1" max="31" placeholder="ДД">
+      <label><h3 class="booking-steps__data-check-in-title">Дата въезда</h3>
+      <input type="number" min="1" max="31" placeholder="ДД"></label>
       <input type="number" min="1" max="12" placeholder="ММ">
       <input type="number" min="2000" max="2030" placeholder="ГГГГ">
     </div>
     <div class="booking-steps__data-check-out">
-      <h3 class="booking-steps__data-check-out-title">Дата выезда</h3>
-      <input type="number" min="1" max="31" placeholder="ДД">
+      <label><h3 class="booking-steps__data-check-out-title">Дата выезда</h3>
+      <input type="number" min="1" max="31" placeholder="ДД"></label>
       <input type="number" min="1" max="12" placeholder="ММ">
       <input type="number" min="2000" max="2030" placeholder="ГГГГ">
     </div>
@@ -70,10 +70,10 @@
   <p class="booking-steps__step-counter">ШАГ 3</p>
   <h2>Тип коттеджа</h2>
   <div class="booking-steps__cottage-type">
-    <label>ФЛАГМАН<input type="radio" name="cottage-type" value="flagman"></label>
-    <label>ОЗЕРНЫЙ<input type="radio" name="cottage-type" value="ozerny"></label>
-    <label>ОЛЬХОВКА<input type="radio" name="cottage-type" value="olhovka"></label>
-    <label>ПОРТОВЫЙ<input type="radio" name="cottage-type" value="portovy"></label>
+    <label>Флагман<input type="radio" name="cottage-type" value="flagman"></label>
+    <label>Озерный<input type="radio" name="cottage-type" value="ozerny"></label>
+    <label>Ольховка<input type="radio" name="cottage-type" value="olhovka"></label>
+    <label>Портовый<input type="radio" name="cottage-type" value="portovy"></label>
   </div>
   <div class="booking-steps__cottage-type-description-icons">
     <span>Площадь 100м</span>
@@ -102,15 +102,15 @@
   </div>
 
   <!-- Не хватает оберток -->
-    <label><input type="radio" name="payment-way" value="pay-on-place">По приезду</label>
+    <label><input type="radio" name="payment-way" value="pay-on-place"> По приезду</label>
     <p>Вы можете внести оплату по факту заселения</p>
-    <label><input type="radio" name="payment-way" value="pay-now">Сейчас</label>
+    <label><input type="radio" name="payment-way" value="pay-now"> Сейчас</label>
     <p>Прямо сейчас вы можете внести оплату с помощью банковской карты</p>
 
-    <label>НОМЕР КАРТЫ <input type="number" placeholder="0000-0000-0000-0000"></label>
-    <label>КОД CVV <input type="number" placeholder="123"></label>
-    <label>ФАМИЛИЯ ВЛАДЕЛЬЦА КАРТЫ <input type="text" placeholder="VLADIMIR VLADIMIROV"></label>
-    <label>ДЕЙСТВУЕТ ДО <input type="number" placeholder="01 / 2018"></label>
+    <label>Номер карты <input type="number" placeholder="0000-0000-0000-0000"></label>
+    <label>Код CVV <input type="number" placeholder="123"></label>
+    <label>Фамилия владельца карты <input type="text" placeholder="VLADIMIR VLADIMIROV"></label>
+    <label>Действует до <input type="number" placeholder="01 / 2018"></label>
 
 
   <a href="" class="btn btn--bg-green">Забронировать</a>
@@ -120,13 +120,19 @@
 <footer class="page-footer">
   <div class="page-footer__inner">
 
-    <p class="page-footer__address">г.Санкт-Петербург<br>Приморское ш.600</p>
-    <a href="#" class="page-footer-logo"><img src="" alt="Green Valley"></a>
-    <a href="#" class="page-footer__social"><img src="" alt="vk"></a>
-    <a href="#" class="page-footer__social"><img src="" alt="inst"></a>
-    <a href="#" class="page-footer__social"><img src="" alt="fb"></a>
-    <a href="tel:+78120000000" class="page-footer__phone-link">+7 812 777-55-88</a>
-    <p class="page-footer__mail">info@greenvalley.ru</p>
+    <div class="page-footer__address">
+      <p class="page-footer__address">г.Санкт-Петербург<br>Приморское ш.600</p>
+    </div>
+    <div class="page-footer__logo-social">
+      <a href="#" class="main-logo"><img src="" alt="Green Valley"></a>
+      <a href="#" class="page-footer__social"><img src="" alt="vk"></a>
+      <a href="#" class="page-footer__social"><img src="" alt="inst"></a>
+      <a href="#" class="page-footer__social"><img src="" alt="fb"></a>
+    </div>
+    <div class="page-footer__contacts">
+      <a href="tel:+78120000000" class="page-footer__phone-link">+7 812 777-55-88</a>
+      <p class="page-footer__mail">info@greenvalley.ru</p>
+    </div>
 
   </div>
 </footer>
