@@ -1,9 +1,13 @@
 .page-header {
+
   &__inner {
-    width: 1200px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
   }
 
   &__phone-link {
+    display: none;
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
@@ -12,6 +16,7 @@
   }
 
   &__address {
+    display: none;
     font-size: 14px;
     line-height: 18px;
     color: #191919;
@@ -20,17 +25,24 @@
 .main-logo {
   display: inline-block;
 }
+
 .main-nav {
 
   &__item {
+    display: none;
     display: inline-block;
   }
 
   &__link {
+    display: none;
     padding-right: 18px;
     color: #191919;
     text-decoration: none;
     font-size: 14px;
     line-height: 72px;
   }
+}
+
+.page-header .btn {
+  display: none;
 }
