@@ -3,21 +3,33 @@
   &__inner {
     width: 280px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   &__item {
+    position: relative;
     background-image: url();
-    background-color: lightblue;
-    min-height: 200px;
+    background-image: url(../../img/sales-offers-bg.jpg);
+    min-height: 300px;
     text-align: left;
   }
 
+  &__item:nth-child(-n+2) {
+    display: none;
+  }
+
   &__item-block {
+    position: absolute;
+    top: 50%;
     background-color: #fff;
+    // margin-top: 150px;
     width: 90%;
   }
 
   &__item-block-title {
+    padding: 0 10px;
     font-size: 14px;
     line-height: 24px;
     color: #ff7435;
@@ -25,6 +37,7 @@
   }
 
   &__item-block-txt {
+    padding: 0 10px;
     font-size: 16;
     line-height: 20px;
     color: #191919;

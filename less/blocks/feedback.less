@@ -1,6 +1,6 @@
 .feedback {
   background-image: url();
-  background-color: lightgreen;
+  background-color: #18b89a;
 
   &__inner {
     width: 280px;
@@ -11,13 +11,26 @@
     font-size: 30px;
     font-weight: normal;
     color: #fff;
+    padding: 60px 0;
   }
 
   &__item {
     background-color: #fff;
+    position: relative;
+  }
+
+  // &__item:nth-child(-n+2) {
+  //   display: none;
+  // }
+
+  &__item-photo {
+    position: absolute;
+    top: -10%;
+    left: 35%;
   }
 
   &__item-name {
+    padding-top: 65px;
     font-weight: bold;
     font-style: 14px;
     line-height: 18px;
@@ -27,13 +40,24 @@
     list-style: none;
   }
 
+  &__item-socials-list li {
+    display: inline-block;
+  }
+
   &__item-txt {
     font-size: 16px;
     line-height: 22px;
+    padding: 20px;
   }
 
   &__item-data {
     font-size: 14px;
     line-height: 18px;
+    padding-bottom: 30px;
   }
+}
+
+.feedback .btn {
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
