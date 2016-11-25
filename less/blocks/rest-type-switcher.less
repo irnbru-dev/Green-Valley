@@ -1,12 +1,20 @@
 .rest-type-switcher {
+
   &__inner {
-    width: 280px;
+    min-width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   &__type-item {
-    background-image: url();
     color: #1c1c1c;
     text-align: center;
+
+    min-height: 500px;
+  }
+  &__rest-type-switcher__type-item-pic {
+    width: 100%;
   }
 
   &__type-title {
@@ -25,15 +33,14 @@
 
   &__tab-item {
     display: inline-block;
-  }
-
+}
   &__tab-item a {
     text-decoration: none;
+    text-transform: uppercase;
+    color: @gray-lighter;
   }
-
-  &__tab-item--active {
-    display: inline-block;
-    color: #ff7435;
+  &__tab-item a:hover {
+    color: @orange;
   }
 
   &__options-inner {
@@ -57,6 +64,6 @@
   &__options-txt {
     font-size: 14px;
     line-height: 72px;
-    color: #191919;
+    color: @gray-diff;
   }
 }

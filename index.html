@@ -7,7 +7,7 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__inner">
+  <div class="page-header__inner container">
 
     <a href="#" class="main-logo"><img src="img/logo.png" alt="Green Valley"></a>
 
@@ -37,12 +37,18 @@
 <div class="rest-type-switcher">
   <div class="rest-type-switcher__inner">
 
+    <ul class="rest-type-switcher__tab">
+      <li class="rest-type-switcher__tab-item rest-type-switcher__tab-item--active"><a href="#rest-family">Семейный</a></li>
+      <li class="rest-type-switcher__tab-item"><a href="#rest-company">Корпоративный</a></li>
+    </ul>
+
     <div class="rest-type-switcher__type">
       <section id="#rest-family" class="rest-type-switcher__type-item  rest-type-switcher__type-item--active">
         <div class="rest-type-switcher__type-inner">
           <h1 class="rest-type-switcher__type-title">Семейный отдых на берегу Финского залива</h1>
           <p class="rest-type-switcher__type-txt">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьёй.</p>
         </div>
+        <div class="rest-type-switcher__type-item-pic"><img src="img/family-bg.jpg" alt=""></div>
       </section>
       <section id="#rest-company" class="rest-type-switcher__type-item">
         <div class="rest-type-switcher__type-inner">
@@ -50,11 +56,6 @@
           <p class="rest-type-switcher__type-txt">Lorem ipsum dolor.</p>
         </div>
       </section>
-
-      <ul class="rest-type-switcher__tab">
-      <li class="rest-type-switcher__tab-item rest-type-switcher__tab-item--active"><a href="#rest-family">Семейный</a></li>
-      <li class="rest-type-switcher__tab-item"><a href="#rest-company">Корпоративный</a></li>
-    </ul>
 
     </div>
 
@@ -134,7 +135,7 @@
     <h1 class="feedback__title">Отзывы</h1>
 
     <div class="feedback__item">
-      <div class="feedback__item-photo"><img src="img/feedback-photo.jpg" alt="Person"></div>
+      <div class="feedback__item-photo" style="background-image: url(img/feedback-photo.jpg") alt="Person"></div>
       <p class="feedback__item-name">Екатерина В.</p>
       <div class="feedback__item-socials">
         <ul class="feedback__item-socials-list">
@@ -209,14 +210,18 @@
   <div class="place-picker__inner">
     <h1 class="place-picker__title">Где вы хотите отдохнуть?</h1>
     <div class="preview-card">
-      <div class="preview-card__img"><a href=""><img src="" alt="Hotel"></a></div>
-      <div class="preview-card__title">В отеле</div>
-      <div class="preview-card__txt">от<span class="preview-card__txt--col-orange"> 4000 </span>руб./сутки</div>
+      <div class="preview-card__img"><a href=""><img src="img/preview-card-hotel.jpg" alt="Hotel"></a></div>
+      <div class="preview-card__description">
+        <div class="preview-card__title">В отеле</div>
+        <div class="preview-card__txt">от<span class="preview-card__txt--col-orange"> 4000 </span>руб./сутки</div>
+      </div>
     </div>
     <div class="preview-card">
-      <div class="preview-card__img"><a href=""><img src="" alt="Cottage"></a></div>
-      <div class="preview-card__title">Стандарт</div>
-      <div class="preview-card__txt">от<span class="preview-card__txt--col-orange"> 6800 </span>руб./сутки</div>
+      <div class="preview-card__img"><a href=""><img src="img/preview-card-cottage.jpg" alt="Cottage"></a></div>
+      <div class="preview-card__description">
+        <div class="preview-card__title">Стандарт</div>
+        <div class="preview-card__txt">от<span class="preview-card__txt--col-orange"> 6800 </span>руб./сутки</div>
+      </div>
     </div>
   </div>
 </section>

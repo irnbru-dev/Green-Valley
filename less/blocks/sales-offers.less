@@ -1,7 +1,9 @@
 .sales-offers {
 
   &__inner {
-    width: 280px;
+    min-width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -10,13 +12,12 @@
 
   &__item {
     position: relative;
-    background-image: url();
     background-image: url(../../img/sales-offers-bg.jpg);
     min-height: 300px;
     text-align: left;
   }
 
-  &__item:nth-child(-n+2) {
+  &__item:nth-child(n+2) {
     display: none;
   }
 
@@ -32,7 +33,7 @@
     padding: 0 10px;
     font-size: 14px;
     line-height: 24px;
-    color: #ff7435;
+    color: @orange;
     text-transform: uppercase;
   }
 
@@ -40,6 +41,6 @@
     padding: 0 10px;
     font-size: 16;
     line-height: 20px;
-    color: #191919;
+    color: @gray-diff;
   }
 }

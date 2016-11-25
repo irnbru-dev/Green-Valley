@@ -3,7 +3,9 @@
   background-color: #18b89a;
 
   &__inner {
-    width: 280px;
+    min-width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -19,14 +21,17 @@
     position: relative;
   }
 
-  // &__item:nth-child(-n+2) {
+  // &__item:nth-child(n+2) {
   //   display: none;
   // }
 
   &__item-photo {
     position: absolute;
-    top: -10%;
-    left: 35%;
+    box-sizing: border-box;
+
+    top: -25px;
+    left: 50%;
+    margin-left: -40px;
   }
 
   &__item-name {

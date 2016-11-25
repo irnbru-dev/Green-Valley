@@ -1,14 +1,21 @@
 .room-description {
-  &__main-about {
+  &__inner {
+    min-width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  &__main-title {
     text-align: center;
   }
 
   &__main-title-txt {
+    text-align: center;
     text-transform: uppercase;
   }
 
   &__main-title-txt--orange-col {
-    color: #ff7435;
+    color: @orange;
   }
 
   &__list {
@@ -20,6 +27,6 @@
   }
 
   &__price--orange-col {
-    color: #ff7435;
+    color: @orange;
   }
 }

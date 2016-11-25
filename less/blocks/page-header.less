@@ -1,7 +1,9 @@
 .page-header {
-
+// @media (min-width: @screen-xs) {
   &__inner {
-    width: 280px;
+    min-width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
   }
@@ -12,14 +14,14 @@
     text-decoration: none;
     font-size: 18px;
     line-height: 72px;
-    color: #191919;
+    color: @gray-diff;
   }
 
   &__address {
     display: none;
     font-size: 14px;
     line-height: 18px;
-    color: #191919;
+    color: @gray-diff;
   }
 }
 .main-logo {
@@ -30,13 +32,12 @@
 
   &__item {
     display: none;
-    display: inline-block;
   }
 
   &__link {
     display: none;
     padding-right: 18px;
-    color: #191919;
+    color: @gray-diff;
     text-decoration: none;
     font-size: 14px;
     line-height: 72px;
@@ -46,3 +47,4 @@
 .page-header .btn {
   display: none;
 }
+// }
