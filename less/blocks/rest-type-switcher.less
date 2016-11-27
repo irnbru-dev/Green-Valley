@@ -1,29 +1,41 @@
 .rest-type-switcher {
 
   &__inner {
-    min-width: 320px;
-    padding: 0 10px;
-    margin: 0 auto;
     text-align: center;
   }
 
   &__type-item {
-    color: #1c1c1c;
-    text-align: center;
-
+    color: @gray-darkest;
     min-height: 500px;
   }
-  &__rest-type-switcher__type-item-pic {
+
+  &__type-item {
+    background-image: url(../../img/forest-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 290px;
+  }
+
+  &__type-item:nth-child(2) {
+    display: none;
+  }
+
+  &__type-inner {
+    background-color: #fff;
+    padding: 0 30px;
   }
 
   &__type-title {
-    font-size: 36px;
-    line-height: 42px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 26px;
   }
 
   &__type-txt {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 
@@ -34,13 +46,16 @@
   &__tab-item {
     display: inline-block;
 }
+
   &__tab-item a {
     text-decoration: none;
     text-transform: uppercase;
     color: @gray-lighter;
   }
+
   &__tab-item a:hover {
     color: @orange;
+    border-bottom: 1px double @orange;
   }
 
   &__options-inner {

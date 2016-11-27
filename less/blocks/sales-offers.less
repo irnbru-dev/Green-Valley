@@ -1,32 +1,37 @@
 .sales-offers {
 
-  &__inner {
-    min-width: 320px;
-    padding: 0 10px;
-    margin: 0 auto;
+  // &__inner {
+  //   min-width: 320px;
+  //   padding: 0 10px;
+    // margin: 0 auto;
+    // text-align: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+  // }
+
+  &__title {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    padding-top: 50px;
   }
 
   &__item {
-    position: relative;
+    padding-top: 158px;
+    padding-bottom: 30px;
     background-image: url(../../img/sales-offers-bg.jpg);
-    min-height: 300px;
-    text-align: left;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-
-  &__item:nth-child(n+2) {
+  &__item:nth-child(2) {
     display: none;
   }
 
   &__item-block {
-    position: absolute;
-    top: 50%;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 295px;
     background-color: #fff;
-    // margin-top: 150px;
-    width: 90%;
   }
 
   &__item-block-title {
