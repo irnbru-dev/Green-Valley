@@ -13,14 +13,22 @@
 
 
     // <----ВЕРНУТЬ!!! с картой все висит------>
-  // &__map {
-  //   width: 100%;
-  // }
+  &__map {
+    width: 100%;
+  }
 
-  // &__map iframe {
-  //   width: 100%;
-  //   display: block;
-  // }
+  &__map iframe {
+    width: 100%;
+    display: block;
+  }
+
+  &__items-inner {
+    padding-top: 40px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
 
   &__item-title {
     position: relative;
@@ -36,8 +44,9 @@
     content: '';
     height: 25px;
     top: -15px;
-    left: 48%;
+    left: 45%;
   }
+
   &__item-title--icon-bus:before {
     width: 50px;
     background-image: url(../../img/location-bus-icon.png);
@@ -61,4 +70,29 @@
   &__item-txt--bold {
     font-weight: bold;
   }
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+  .location {
+
+    &__items-inner {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    &__item {
+      border: 1px solid red;
+      margin-right: 20px;
+    }
+
+    &__item-txt {
+      text-align: left;
+    }
+  }
+}
 }

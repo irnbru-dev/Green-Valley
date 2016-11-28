@@ -2,6 +2,20 @@
 
   &__inner {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tab {
+    order:2;
+  }
+
+  &__type {
+    order:1;
+  }
+
+  &__options {
+    order:3;
   }
 
   &__type-item {
@@ -80,5 +94,41 @@
     font-size: 14px;
     line-height: 72px;
     color: @gray-diff;
+  }
+}
+
+@media (min-width: 768px) {
+  .rest-type-switcher {
+    &__type-item {
+      background-image: url(../../img/family-bg-768.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__options-list {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .rest-type-switcher {
+
+    &__type-inner {
+      text-align: left;
+    }
+
+    &__type-title {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+     p {
+      font-style: 18px;
+      line-height: 24px;
+    }
+
+    &__type-title span {
+    }
   }
 }
