@@ -1,0 +1,18 @@
+{
+  "name": "automate-test",
+  "version": "0.0.1",
+  "description": "Репозиторий для изучения автоматизации фронтенда.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicothin/automate-test.git"
+  },
+  "author": "Nikolay Gromov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicothin/automate-test/issues"
+  },
+  "homepage": "https://github.com/nicothin/automate-test#readme"
+}

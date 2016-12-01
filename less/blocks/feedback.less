@@ -79,18 +79,30 @@
   .feedback {
 
     &__item:nth-child(2) {
-    display: inline-block;
-  }
+    display: block;
+    }
 
     &__item {
       margin: 0 100px;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback {
 
     &__items-inner {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
-}
+
+    &__item {
+      // margin-bottom: 50px;
+      min-width: 475px;
+      margin-right: 10px;
+    }
+  }
+
 }
