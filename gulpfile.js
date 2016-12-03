@@ -25,9 +25,21 @@ gulp.task('less', function(){
     .pipe(browserSync.stream());                            // обновляем в браузере
 });
 
-// ЗАДАЧА: Сборка HTML (заглушка)
-gulp.task('html', function(callback) {
-  callback();
+// // ЗАДАЧА: Сборка HTML (заглушка)
+// gulp.task('html', function(callback) {
+//   callback();
+// });
+
+// ЗАДАЧА: Сборка HTML
+gulp.task('html', function() {
+  return gulp.src(dirs.source + '/*.html')                  // какие файлы обрабатывать (путь из константы, маска имени)
+    .pipe(fileinclude({                                     // обрабатываем gulp-file-include
+      prefix: '@@',
+      basepath: '@file',
+      indent: true,
+    }))
+    .pipe(replace(/\n\s*<!--[\s\S]+?-->/gm, ''))            // убираем комментарии <!--DEV ... -->
+    .pipe(gulp.dest(dirs.build));                           // записываем файлы (путь из константы)
 });
 
 // ЗАДАЧА: Сборка всего

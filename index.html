@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Green Valey</title>
+  <meta charset="UTF-8">
+  <title>Green Valey</title>
   <link rel="stylesheet" href="css/style.css">
-</head>
+  </head>
 <body>
 <header class="page-header">
   <div class="page-header__inner">
 
-    <a href="#" class="main-logo"><img src="img/logo.png" alt="Green Valley"></a>
+    <a href="index.html" class="main-logo"><img src="img/logo.png" alt="Green Valley"></a>
 
     <div class="main-nav">
       <nav class="main-nav__nav">
@@ -51,16 +51,17 @@
             <span>Семейный отдых на берегу</span><br>
             <span>Финского залива</span>
           </h1>
-          <p class="rest-type-switcher__type-txt">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьёй.</p>
+          <p class="rest-type-switcher__type-txt"><span>Green Valley - это современная база отдыха</span><br><span>в курортном районе для здорового отдыха всей семьёй.</span></p>
           <div class="rest-type-switcher__type-item-pic"><img src="" alt=""></div>
         </div>
       </section>
-      <section id="#rest-company" class="rest-type-switcher__type-item">
+<!--       <section id="#rest-company" class="rest-type-switcher__type-item">
         <div class="rest-type-switcher__type-inner">
           <h1 class="rest-type-switcher__type-title">Корпоративный отдых</h1>
-          <p class="rest-type-switcher__type-txt">Lorem ipsum dolor.</p>
+          <p class="rest-type-switcher__type-txt">Green Valley - это современная база отдыха<br>в курортном районе для здорового отдыха всей семьёй.</p>
         </div>
-      </section>
+      </section> -->
+
 
     </div>
 
@@ -69,29 +70,29 @@
       <section id="#rest-family" class="rest-type-switcher__options-item  rest-type-switcher__type-item--active">
         <div class="rest-type-switcher__options-inner">
           <h1 class="rest-type-switcher__options-title">Здоровый отдых</h1>
-          <p>Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
+          <p class="rest-type-switcher__options-title-txt">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. <span>Почувствуйте отдых!</span></p>
          <ul class="rest-type-switcher__options-list">
-           <li>
+           <li class="rest-type-switcher__options-list-item">
              <span class="rest-type-switcher__options-pict" style="background-image: url();"></span>
              <span class="rest-type-switcher__options-txt">Бассейн</span>
            </li>
-           <li>
+           <li class="rest-type-switcher__options-list-item">
              <span class="rest-type-switcher__options-pict" style="background-image: url();"></span>
              <span class="rest-type-switcher__options-txt">Спортивная площадка</span>
            </li>
-           <li>
+           <li class="rest-type-switcher__options-list-item">
              <span class="rest-type-switcher__options-pict" style="background-image: url();"></span>
              <span class="rest-type-switcher__options-txt">Бильярд</span>
            </li>
-           <li>
+           <li class="rest-type-switcher__options-list-item">
              <span class="rest-type-switcher__options-pict" style="background-image: url();"></span>
              <span class="rest-type-switcher__options-txt">Спа</span>
            </li>
-           <li>
+           <li class="rest-type-switcher__options-list-item">
              <span class="rest-type-switcher__options-pict" style="background-image: url();"></span>
               <span class="rest-type-switcher__options-txt">Бани</span>
             </li>
-            <li>
+            <li class="rest-type-switcher__options-list-item">
               <span class="rest-type-switcher__options-pict" style="background-image: url();"></span>
               <span class="rest-type-switcher__options-txt">Анимация</span>
             </li>
@@ -117,20 +118,15 @@
 
 <section class="gallery">
   <div class="gallery__inner">
-    <div class="gallery__inner-big">
-      <div class="gallery__object-big gallery__object-big--active"><img src="" alt=""><img src="img/gallery-big.jpg" alt="YOURDREAMHOUSE" class="gallery__image"></div>
-    </div>
-    <div class="gallery__inner-small">
-      <div class="gallery__object-small gallery__object-small--active"><img src="" alt=""></div>
-      <div class="gallery__object-small"><img src="" alt=""></div>
-      <div class="gallery__object-small"><img src="" alt=""></div>
-      <div class="gallery__object-small"><img src="" alt=""></div>
-      <div class="gallery__object-small"><img src="" alt=""></div>
-      <div class="gallery__object-small"><img src="" alt=""></div>
-      <div class="gallery__object-small"><img src="" alt=""></div>
-      <div class="gallery__object-small"><img src="" alt=""></div>
-      <div class="gallery__object-small"><img src="" alt=""></div>
-      <div class="gallery__object-small"><img src="" alt=""></div>
+      <div id="gallery-main-photo" class="gallery__object-big gallery__object-big--active">
+          <img src="img/gallery-big.jpg" alt="YOURDREAMHOUSE" class="gallery__image">
+      </div>
+    <div id="gallery-thumbs" class="owl-carousel">
+      <div><a href=""><img src="img/feedback-photo-2.jpg" alt=""></a></div>
+      <div><a href=""><img src="img/feedback-photo.jpg" alt=""></a></div>
+      <div><a href=""><img src="img/feedback-photo-2.jpg" alt=""></a></div>
+      <div><a href=""><img src="img/feedback-photo.jpg" alt=""></a></div>
+      <div><a href=""><img src="img/feedback-photo-2.jpg" alt=""></a></div>
     </div>
   </div>
 </section>
@@ -259,6 +255,6 @@
   </div>
 </footer>
 
-
+<script src="js/script.min.js"></script>
 </body>
 </html>
